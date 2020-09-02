@@ -1,10 +1,11 @@
   
-name: Rancher CLI Action
+name: Rancher CLI Action - test
 description: Use the Rancher CLI to manage resources inside an action.
 author: colbyhill21
 branding:
   icon: 'terminal'
   color: 'blue'
+  color: "blue"
 inputs:
   token:
     description: Rancher Token for logging in.
