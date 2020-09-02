@@ -15,8 +15,8 @@ inputs:
   url:
     description: URL of the Rancher instance.
     required: true
-  args:
-    description: Command you want to run. 
+  command_string:
+    description: Rancher kubectl command you want to run.
     required: true
 runs:
   using: docker
