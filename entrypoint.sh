@@ -4,7 +4,11 @@ token="$INPUT_TOKEN"
 context="$INPUT_CONTEXT"
 url="$INPUT_URL"
 command_string='$INPUT_COMMAND_STRING'
-command_to_execute="rancher kubectl $command_string"
+
+echo CMD STR $command
+command_to_execute="rancher --debug kubectl $command_string"
+
+echo CMD EXEC $command_to_execute
 
 rancher login --token $token --context $context $url
 eval $command_to_execute

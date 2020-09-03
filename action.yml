@@ -1,4 +1,4 @@
-name: Rancher CLI Action - test
+name: Rancher CLI Action - debug
 description: Use the Rancher CLI to manage resources inside an action.
 author: colbyhill21
 branding:
