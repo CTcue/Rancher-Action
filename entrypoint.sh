@@ -10,10 +10,11 @@ command_string='$INPUT_COMMAND_STRING'
 echo START
 
 echo "CMD STR $command_string"
+echo "CMD STR INPUT $INPUT_COMMAND_STRING"
 
 echo POST STR
 
-command_to_execute="rancher --debug kubectl $command_string"
+command_to_execute="rancher --debug kubectl $INPUT_COMMAND_STRING"
 
 echo "CMD EXEC $command_to_execute"
 
