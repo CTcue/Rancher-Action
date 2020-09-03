@@ -9,13 +9,13 @@ command_string='$INPUT_COMMAND_STRING'
 
 echo START
 
-echo CMD STR $command_string
+echo "CMD STR $command_string"
 
 echo POST STR
 
 command_to_execute="rancher --debug kubectl $command_string"
 
-echo CMD EXEC $command_to_execute
+echo "CMD EXEC $command_to_execute"
 
 rancher login --token $token --context $context $url
 
