@@ -1,4 +1,4 @@
-FROM debian:stable
+FROM debian:8
 RUN apt-get update && apt-get upgrade -y
 RUN apt-get install -y curl wget gnupg apt-transport-https
 RUN curl -s https://packages.cloud.google.com/apt/doc/apt-key.gpg | apt-key add -
